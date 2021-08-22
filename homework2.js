@@ -155,6 +155,22 @@ person1.printinfo()
     If the length of the string is less than 10 console log "Small Number"
 */
 
+const lengthIsGreater = (str) => {
+    return new Promise ((resolve, reject) => {
+        if (str.length>10){
+            resolve("Big word")
+        } else {
+            reject("Small Number")
+        }
+    })
+}
+console.log(lengthisgreat("hello"))
+console.log(lengthisgreat("hellooooooooo"))
+
+
+
+console.log("========= 2nd using regular method ===============")
+
 function lengthisgreat(str){
     if (str.length>10){
         return "Big word"
@@ -164,9 +180,6 @@ function lengthisgreat(str){
 }
 console.log(lengthisgreat("hellooooooooo"))
 console.log(lengthisgreat("hello"))
-
-
-
 
 
 
